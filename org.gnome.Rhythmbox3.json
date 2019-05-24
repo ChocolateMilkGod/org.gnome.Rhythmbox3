@@ -22,6 +22,7 @@
         /* Play sounds */
         "--socket=pulseaudio",
         /* Browse user's Music directory */
+        "--filesystem=xdg-download",
         "--filesystem=xdg-music",
         /* Needed for dconf to work */
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
@@ -140,11 +141,10 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/rhythmbox.git",
-                    "tag": "v3.4.3",
-                    "commit": "8d0325421da990afab2e1c704648e1ad17378141"
+                    "url": "https://gitlab.gnome.org/p3732/rhythmbox.git",
+                    "branch": "WIP-headerbar"
                 }
             ]
-        }
+            }
     ]
 }
